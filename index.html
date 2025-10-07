@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prasanna S.M. Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* Global Styles */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family:'Roboto', sans-serif; background:#0c0c0c; color:#f0f0f0; scroll-behavior:smooth;}
+a {color:#f0c74d; text-decoration:none;}
+section {padding:80px 10%; position:relative;}
+h1,h2,h3 {font-family:'Oswald', sans-serif;}
+h1 {font-size:3em; color:#f0c74d;}
+h2 {font-size:2em; margin-bottom:20px;}
+h3 {font-size:1.2em; color:#f0c74d; margin-top:15px;}
+
+/* Navigation */
+nav {position:fixed; width:100%; top:0; left:0; background:rgba(12,12,12,0.95); display:flex; justify-content:space-between; align-items:center; padding:10px 10%; z-index:1000;}
+nav a {margin-left:20px; font-weight:bold;}
+
+/* Hero Section */
+#hero {height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?fit=crop&w=1350&q=80') center/cover no-repeat;}
+#hero h1 {font-size:4em; margin-bottom:20px;}
+#hero p {font-size:1.2em; margin-bottom:30px;}
+.cta-btn {padding:10px 25px; background:#f0c74d; color:#0c0c0c; border:none; cursor:pointer; font-weight:bold; transition:0.3s;}
+.cta-btn:hover {background:#ffd633;}
+
+/* About Section */
+#about {display:flex; flex-wrap:wrap; align-items:center;}
+#about img {width:300px; border-radius:10px; margin-right:50px; margin-bottom:30px;}
+#about div {flex:1; min-width:300px;}
+#about p {margin-top:10px; line-height:1.6;}
+
+/* Skills */
+#skills {background:#111; text-align:center;}
+.skills-container {display:flex; flex-wrap:wrap; justify-content:center; gap:30px;}
+.skill-card {background:#1c1c1c; padding:20px; border-radius:10px; width:200px; transition:0.3s;}
+.skill-card:hover {background:#f0c74d; color:#0c0c0c;}
+
+/* Projects */
+#projects {text-align:center;}
+.project-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px;}
+.project-card {background:#1c1c1c; border-radius:10px; overflow:hidden; transition:0.3s; cursor:pointer;}
+.project-card img {width:100%; height:150px; object-fit:cover;}
+.project-card div {padding:15px;}
+.project-card:hover {background:#f0c74d; color:#0c0c0c;}
+
+/* Storytelling */
+#storytelling {background:#111; text-align:center;}
+.story-carousel {display:flex; overflow-x:auto; gap:20px; padding:20px;}
+.story-card {min-width:300px; background:#1c1c1c; border-radius:10px; padding:20px; flex-shrink:0;}
+
+/* Contact */
+#contact {text-align:center;}
+form {display:flex; flex-direction:column; max-width:500px; margin:0 auto;}
+input, textarea {margin:10px 0; padding:10px; border-radius:5px; border:none; outline:none;}
+button {padding:10px 25px; background:#f0c74d; color:#0c0c0c; border:none; cursor:pointer; font-weight:bold; transition:0.3s;}
+button:hover {background:#ffd633;}
+
+/* Footer */
+footer {text-align:center; padding:20px; background:#111; margin-top:20px;}
+
+/* Scrollbar */
+::-webkit-scrollbar {width:8px;}
+::-webkit-scrollbar-thumb {background:#f0c74d; border-radius:5px;}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div>Prasanna S.M.</div>
+    <div>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#storytelling">Storytelling</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero">
+    <h1>Prasanna S.M.</h1>
+    <p>AI Creator | Filmmaker | Storyteller</p>
+    <p>"A son of God will always win this world."</p>
+    <button class="cta-btn" onclick="location.href='#projects'">View My Work</button>
+    <!-- Mini cinematic trailer placeholder -->
+    <video width="400" autoplay muted loop style="margin-top:30px; border-radius:10px;">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+    </video>
+</section>
+
+<!-- About Me -->
+<section id="about">
+    <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a1?fit=crop&w=400&q=80" alt="Prasanna">
+    <div>
+        <h2>About Me</h2>
+        <p>I am Prasanna, an 18-year-old AI enthusiast, filmmaker, and storyteller from Tamil Nadu. I create apps, short films, and AI-driven projects that merge technology with creativity.</p>
+        <p>My vision: To inspire and innovate, guided by faith and passion. I blend cinematic storytelling, app design, and AI to create unique experiences.</p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">AI & Data Science</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Web & App Development</div>
+        <div class="skill-card">UX/UI Design (Figma)</div>
+        <div class="skill-card">Filmmaking & Storyboarding</div>
+        <div class="skill-card">Video Editing (CapCut)</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1581091870621-2b320f7e5b7e?fit=crop&w=400&q=80" alt="Diet Craft App">
+            <div>
+                <h3>Diet Craft App</h3>
+                <p>AI-based meal planner app with nutrient guidance and genetic suitability.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1581091012184-5f4d1589a3f1?fit=crop&w=400&q=80" alt="Event Management">
+            <div>
+                <h3>Event Management System</h3>
+                <p>Web-based system for event registration, booking, notifications, and analytics.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1603070120006-54f15022b423?fit=crop&w=400&q=80" alt="Sports Drama Short Film">
+            <div>
+                <h3>Sports Drama Short Film</h3>
+                <p>A cinematic 7–10 min short exploring passion vs professionalism in sports.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1610878180933-2b1ab76d8f3c?fit=crop&w=400&q=80" alt="Legacy of Shadows">
+            <div>
+                <h3>Legacy of Shadows</h3>
+                <p>Original cinematic story blending English and Tamil roots with emotional storytelling.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Storytelling -->
+<section id="storytelling">
+    <h2>Storytelling & Cinematics</h2>
+    <div class="story-carousel">
+        <div class="story-card">
+            <h3>Storyboard</h3>
+            <p>Visualized short films, AI-generated sets, and cinematic scenes.</p>
+        </div>
+        <div class="story-card">
+            <h3>Legacy of Shadows Teaser</h3>
+            <p>Short animated clips and character visualizations.</p>
+        </div>
+        <div class="story-card">
+            <h3>Sports Drama Teaser</h3>
+            <p>AI-assisted shots and short cinematic clips for the project.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Prasanna S.M. | Designed with Passion & Faith</p>
+    <p>
+        <a href="#">Instagram</a> | 
+        <a href="#">LinkedIn</a> | 
+        <a href="#">GitHub</a>
+    </p>
+</footer>
+
+</body>
+</html>
